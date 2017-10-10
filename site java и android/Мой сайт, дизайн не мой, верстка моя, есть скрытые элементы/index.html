@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Nerds</title>
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Roboto:500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -173,5 +173,22 @@
                 </div>
             </div>
         </footer>
+        <script>
+            
+            var link = document.querySelector(".btn-open-form");
+            var popup = document.querySelector(".modal-content");
+            var close = popup.querySelector(".modal-content-close")
+
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.add("modal-content-show");
+            });
+            
+            close.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.remove("modal-content-show");
+            });
+
+        </script>
     </body>
 </html>

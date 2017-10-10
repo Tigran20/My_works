@@ -598,6 +598,8 @@ p {
   background: url(../img/map.jpg) no-repeat center center;
 }
 
+
+
 .contacts {
   position: absolute;
   top: 89px;
@@ -1352,6 +1354,10 @@ article:hover > div {
   z-index: 1;
 }
 
+.modal-content-show {
+  display: block;    
+}
+
 .modal-content-close {
   position: absolute;
   top: 6px;
@@ -1464,3 +1470,5 @@ form button .btn,
 
   vertical-align: top;
 }
+
+
